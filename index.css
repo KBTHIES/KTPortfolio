@@ -1,0 +1,49 @@
+
+h1 {
+    text-align: justify;
+    color: darkgray;
+    height: 10%;
+    position: absolute;
+    padding-right: 0%;
+    padding-left: 45%;
+    font-family: "Helvetica";
+}
+
+ul{
+    list-style-type: none;
+    margin:0%;
+    padding: 0%;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    color: darkblue;
+    background-color: darkgray;
+    padding: 1%;
+}
+
+li a:hover{
+    background-color: darkblue;
+    color: white;
+} 
+
+#topbar {
+    height: 10%;
+    width: 100%;
+    background-image: url(web15.jpg);
+    background-size: cover; 
+    background-color: darkblue;
+    position:absolute;
+    
+}
+
+#navbar{
+    margin-top: 7%;
+    position:absolute;
+    
+}
+
+span {
+    position:absolute;
+}
