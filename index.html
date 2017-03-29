@@ -1,16 +1,133 @@
 <!doctype html>
 
-<html>
-    
-    <title>KT</title>
-    <head>
-       <link rel="stylesheet" href="css/foundation.css">
+<html data-brackets-id='1181'>
+    <title data-brackets-id='1182'>KT</title>
+    <head data-brackets-id='1183'>
+       <link data-brackets-id='1184' rel="stylesheet" href="css/foundation.css">
+        <link data-brackets-id='1185' rel="stylesheet" href="css/app.css">
+        <link data-brackets-id='1186' rel="stylesheet" href="index.css">
+        <link data-brackets-id='1187' rel="icon" href="Logo.ico">
+        <script data-brackets-id='1188' src="js/vendor/modernizr.js"></script>
+      <style data-brackets-id='1189'>
+body {
+    font-family: "Lato", sans-serif;
+}
+/* this is the bit about the nav bar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-  <!-- This is how you would link your custom stylesheet -->
-  <link rel="stylesheet" href="css/app.css">
+.sidenav a {
+    padding: 1% 1% 1% 3%;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
 
-  <script src="js/vendor/modernizr.js"></script>
+.sidenav a:hover, .offcanvas a:focus{
+    color: darkblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<!-- this is the end of the bit about the nav bar -->
     </head>
     
-    <body></body>
+    <body data-brackets-id='1190'>
+<!-- This is the bit about the top bar with the image and Kevin Thies -->
+        <div data-brackets-id='1191' id="topbar">
+        <br data-brackets-id='1192'>
+        <h1 data-brackets-id='1193'>Kevin Thies</h1>
+        </div>  
+        <div data-brackets-id='1194' id="mySidenav" class="sidenav">
+  <a data-brackets-id='1195' href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- This is the bit about the three title things on the nav bar -->
+  <a data-brackets-id='1196' href="#">Home</a>
+  <a data-brackets-id='1197' href="#">Portfolio</a>
+  <a data-brackets-id='1198' href="#">About</a>
+</div>
+
+<br data-brackets-id='1199'>
+
+<span data-brackets-id='1200' style="color:darkgray;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script data-brackets-id='1201'>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!--This is the end of the bit about the nav bar and the start of the TABLE -->
+<ul data-brackets-id='1202' id="rig">
+  <li data-brackets-id='1203'>
+        <a data-brackets-id='1204' class="rig-cell" href="#">
+            <img data-brackets-id='1205' class="rig-img" src="TheGif.gif" />
+            <span data-brackets-id='1206' class="rig-overlay"></span>
+            <span data-brackets-id='1207' class="rig-text">Procedural Modeling</span>
+        </a>
+  </li>
+    <li data-brackets-id='1208'>
+        <a data-brackets-id='1209' class="rig-cell" href="#">
+            <img data-brackets-id='1210' class="rig-img" src="VRAY.gif" />
+            <span data-brackets-id='1211' class="rig-overlay"></span>
+            <span data-brackets-id='1212' class="rig-text">Purnell Study</span>
+        </a>
+  </li>
+    <li data-brackets-id='1213'>
+        <a data-brackets-id='1214' class="rig-cell" href="#">
+            <img data-brackets-id='1215' class="rig-img" src="IMG_6411.JPG" />
+            <span data-brackets-id='1216' class="rig-overlay"></span>
+            <span data-brackets-id='1217' class="rig-text">Tool Structure</span>
+        </a>
+  </li>
+      <li data-brackets-id='1213'>
+        <a data-brackets-id='1214' class="rig-cell" href="#">
+            <img data-brackets-id='1215' class="rig-img" src="Fredensborg2.jpg" />
+            <span data-brackets-id='1216' class="rig-overlay"></span>
+            <span data-brackets-id='1217' class="rig-text">Documentation</span>
+        </a>
+  </li>
+    <li data-brackets-id='1218'>
+        <a data-brackets-id='1219' class="rig-cell" href="#">
+            <img data-brackets-id='1220' class="rig-img" src="7.jpg" />
+            <span data-brackets-id='1221' class="rig-overlay"></span>
+            <span data-brackets-id='1222' class="rig-text">Cube House</span>
+        </a>
+  </li>
+    <li data-brackets-id='1218'>
+        <a data-brackets-id='1219' class="rig-cell" href="#">
+            <img data-brackets-id='1220' class="rig-img" src="Crest.jpg" />
+            <span data-brackets-id='1221' class="rig-overlay"></span>
+            <span data-brackets-id='1222' class="rig-text">Other Pieces</span>
+        </a>
+  </li>
+    
+</ul>
+<!-- this is the end of the table -->
+    </body>
 </html>
